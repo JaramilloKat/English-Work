@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formularios</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <br>    <!--form onsubmit="return validate()"-->
+    <h2 id="nombreUsuario"></h2>
+    <br>
+    <form target="_self">
+      <div>
+        <h1>Restaurants</h1>
+        <h1>Ice Cream and Pastry Shop </h1>
+        <h3>Add a product</h3>
+      </div>
+      <div>
+        <label for="categoria">Category </label>
+        <select name="categoria" required>
+          <option value="">Select category …</option>
+          <option value="Helado">Ice Cream</option>
+          <option value="Torta">Cake</option>
+        </select>
+      </div>
+      <div id="sabores">
+        <p><strong>Flavors that we offer</strong></p>
+      </div>
+      <div>
+        <label for="sabor">Taste:</label>
+        <input name="sabor" id="sabor" class="input" type="text" required>
+      </div>
+      <div>
+        <label for="cantidad">Quantity:</label>
+        <input name="cantidad" id="cantidad" class="input" type="number" min=1 max=100 required>
+      </div>
+      <div>
+        <input type="radio" name="size" id="small" value="pequeño" checked><label for="small">Small (2)</label>
+        <input type="radio" name="size" id="medium" value="mediano"><label for="medium">Medium (5)</label>
+        <input type="radio" name="size" id="big" value="grande"><label for="big">Jumbo (7)</label>
+      </div>
+      <div>
+        <strong>Complements</strong><br>
+        <input type="checkbox" id="mani" name="mani" value="Maní"><label for="mani">Peanuts</label><br>
+        <input type="checkbox" id="chocolate" name="chocolate" value="Chispas de chocolate"><label for="chocolate">Chocolate Chip</label><br>
+        <input type="checkbox" id="chispas" name="chispas" value="Chispas de Colores"><label for="chispas">Sparks of Colors</label><br>
+        <input type="checkbox" id="leche" name="leche" value="Leche Condensada"><label for="leche">Condensed Milk</label><br>
+      </div>
+      <div>
+        <input type="submit" id="send-button" name="send-button" class="button">
+        <input type="reset" value="Borrar" class="button">
+      </div>
+    </form>
+    <div class="container" id="container">
+      <input type="button" id="finish" class="button" value="Completar Compra">
+    </div>
+    <script src ="/js/app.js"></script>
+    <script src="/js/form.js"></script>ç
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
